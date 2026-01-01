@@ -1,0 +1,92 @@
+.container {
+    padding: 1rem;
+}
+
+.searchWrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    font-size: 0.95rem;
+    outline: none;
+    background: white;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.statusDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.active {
+    background: var(--accent);
+}
+
+.away {
+    background: var(--warning);
+}
+
+.content {
+    flex: 1;
+}
+
+.name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.role {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.statusText {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}

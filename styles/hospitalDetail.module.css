@@ -1,0 +1,76 @@
+/* hospitalDetail.css */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    background: var(--gray-100);
+}
+
+.hospital-header {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.capacity-box {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    margin-bottom: 18px;
+    box-shadow: var(--shadow-light);
+}
+
+.capacity-bar {
+    background: var(--gray-200);
+    border-radius: 100px;
+    height: 8px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.capacity-fill {
+    height: 100%;
+    background: var(--success);
+}
+
+.tab-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.tab-pill {
+    padding: 6px 14px;
+    background: var(--gray-200);
+    border-radius: 100px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.tab-pill.active {
+    background: var(--gray-800);
+    color: white;
+}
+
+.doctor-row {
+    background: white;
+    padding: 14px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow-light);
+}
+
+.chat-btn {
+    background: var(--success);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}

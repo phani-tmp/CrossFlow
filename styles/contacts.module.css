@@ -1,0 +1,62 @@
+/* contacts.css */
+
+.search-box {
+    width: 100%;
+    padding: 10px 16px;
+    background: white;
+    border-radius: 100px;
+    border: 1px solid var(--gray-200);
+    margin: 12px 0;
+    outline: none;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 14px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 10px;
+    box-shadow: var(--shadow-light);
+}
+
+.sectionHeader {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gray-500);
+    padding: 8px 0;
+    margin-top: 8px;
+    position: sticky;
+    top: 0;
+    background: var(--gray-100);
+    z-index: 5;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 2px solid white;
+}
+
+.status-pill {
+    margin-left: auto;
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 12px;
+}
+
+.status-online {
+    background-color: #22c55e;
+    color: #15803d;
+    /* Keep original color if not specified in change */
+}
+
+.status-away {
+    background-color: #eab308;
+    color: var(--gray-600);
+    /* Keep original color if not specified in change */
+}
