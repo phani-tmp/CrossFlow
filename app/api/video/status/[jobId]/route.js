@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function GET(request, { params }) {
-    const { jobId } = params;
+    const { jobId } = await params;
 
     // Mock response for video status
     // In a real app, this would check a database or external service
