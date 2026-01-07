@@ -32,7 +32,12 @@ if (!getApps().length) {
 const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState({
+        uid: 'mock-user-123',
+        email: 'test@crossflow.app',
+        displayName: 'Test Doctor',
+        emailVerified: true
+    }); // Mock user for testing
     const [loading, setLoading] = useState(true);
     const [clockStatus, setClockStatus] = useState('Clocked In');
     const [activeRotation, setActiveRotation] = useState('ED');
@@ -46,6 +51,9 @@ export const UserProvider = ({ children }) => {
     });
 
     useEffect(() => {
+        // BYPASS AUTH LISTENER
+        setLoading(false);
+        /* 
         if (!auth) {
             setLoading(false);
             return;
@@ -63,6 +71,7 @@ export const UserProvider = ({ children }) => {
             setLoading(false);
         });
         return () => unsubscribe();
+        */
     }, []);
 
     const signup = async (email, password, name) => {
